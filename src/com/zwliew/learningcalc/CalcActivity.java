@@ -81,7 +81,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             ans = num0 * num1;
             values.setText("Result : " + Integer.toString(ans));
         }
-        else {
+        else if (op.equals("+")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
             ans = num0 / num1;
@@ -94,6 +94,14 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	public void onClick(View arg0) {
 		Editable str =  values.getText();
         switch(arg0.getId()){
+        	case R.id.zero:
+        		if(num1 != 0){
+        			num1 = 0;
+        			values.setText("");
+        		}
+        		str = str.append(zero.getText());
+        		values.setText(str);
+        	break;
             case R.id.one:
                 if(num1 != 0){
                     num1 = 0;
