@@ -19,5 +19,6 @@
 	<string name="multiply">*</string>
 	<string name="subtract">-</string>
 	<string name="add">+</string>
+	<string name="cancel">c</string>
 	
 </resources>
