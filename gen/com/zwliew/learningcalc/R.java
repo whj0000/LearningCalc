@@ -60,6 +60,7 @@ public final class R {
         public static final int five=0x7f050008;
         public static final int four=0x7f050007;
         public static final int hello_world=0x7f050002;
+        public static final int hint=0x7f050013;
         public static final int multiply=0x7f05000f;
         public static final int nine=0x7f05000c;
         public static final int one=0x7f050004;

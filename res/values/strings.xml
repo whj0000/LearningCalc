@@ -20,5 +20,6 @@
 	<string name="subtract">-</string>
 	<string name="add">+</string>
 	<string name="cancel">c</string>
+	<string name="hint">Enter values</string>
 	
 </resources>
