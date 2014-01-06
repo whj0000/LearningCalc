@@ -91,9 +91,9 @@ public class CalcActivity extends Activity implements View.OnClickListener {
     }
 
 	@Override
-	public void onClick(View arg0) {
+	public void onClick(View v) {
 		Editable str =  values.getText();
-        switch(arg0.getId()){
+        switch(v.getId()){
         	case R.id.zero:
         		if(num1 != 0){
         			num1 = 0;
