@@ -99,7 +99,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     num1 = 0;
                     values.setText("");
                 }
-                str = str.append(two.getText());
+                str = str.append(one.getText());
                 values.setText(str);
             break;
             case R.id.two:
@@ -147,7 +147,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     num1 = 0;
                     values.setText("");
                 }
-                str = str.append(eight.getText());
+                str = str.append(seven.getText());
                 values.setText(str);
             break;
             case R.id.eight:
@@ -155,7 +155,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     num1 = 0;
                     values.setText("");
                 }
-                str = str.append(nine.getText());
+                str = str.append(eight.getText());
                 values.setText(str);
          
             break;
@@ -164,7 +164,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     num1 = 0;
                     values.setText("");
                 }
-                str = str.append(zero.getText());
+                str = str.append(nine.getText());
                 values.setText(str);
          
             break;
