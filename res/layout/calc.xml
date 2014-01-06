@@ -26,25 +26,25 @@
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/seven"
-        android:text="7" />
+        android:text="@string/seven" />
     
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/eight"
-        android:text="8" />
+        android:text="@string/eight" />
         
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/nine"
-        android:text="9" />
+        android:text="@string/nine" />
         
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/divide"
-        android:text="/" />
+        android:text="@string/divide" />
 
    </LinearLayout>
     <LinearLayout android:orientation="horizontal"
@@ -57,25 +57,25 @@
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/four"
-        android:text="4" />
+        android:text="@string/four" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/five"
-        android:text="5" />
+        android:text="@string/five" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/six"
-        android:text="6" />
+        android:text="@string/six" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/multiply"
-        android:text="*" />
+        android:text="@string/multiply" />
 
    </LinearLayout>
    
@@ -89,25 +89,25 @@
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/one"
-        android:text="1" />
+        android:text="@string/one" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/two"
-        android:text="2" />
+        android:text="@string/two" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/three"
-        android:text="3" />
+        android:text="@string/three" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/subtract"
-        android:text="-" />
+        android:text="@string/subtract" />
 
    </LinearLayout>
    
@@ -121,25 +121,25 @@
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/cancel"
-        android:text="C" />
+        android:text="@string/cancel" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/zero"
-        android:text="0" />
+        android:text="@string/zero" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/equals"
-        android:text="=" />
+        android:text="@string/equals" />
 
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:id = "@+id/add"
-        android:text="+" />
+        android:text="@string/add" />
 
    </LinearLayout>
    
