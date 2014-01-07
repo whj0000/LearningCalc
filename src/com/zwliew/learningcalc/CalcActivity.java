@@ -252,7 +252,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 }
             break;
             case R.id.equals:
-                if(!op.equals(null)){
+                if(op != null){
                     if(num1 != 0){
                         if(op.equals("+")){
                             values.setText("");
