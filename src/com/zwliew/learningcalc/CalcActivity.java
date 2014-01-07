@@ -89,7 +89,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             values.setText("Result : " + Integer.toString(ans));
         }
 		} catch (NumberFormatException e) {
-			values.setHint("Invalid value!");
+			
 		}
     }
 
@@ -204,7 +204,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("Result : " + Integer.toString(ans));
                 }
                 } catch (NumberFormatException e) {
-                	values.setHint("Invalid value!");
+              
                 }
             break;
             case R.id.subtract:
@@ -225,7 +225,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("Result : " + Integer.toString(ans));
                 }
                 } catch (NumberFormatException e) {
-                	values.setHint("Invalid value!");
+              
                 }
             break;
             case R.id.multiply:
@@ -246,7 +246,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("Result : " + Integer.toString(ans));
                 }
                 } catch (NumberFormatException e) {
-                	values.setHint("Invalid value!");
+            
                 }
             break;
             case R.id.divide:
@@ -267,7 +267,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("Result : " + Integer.toString(ans));
                 }
                 } catch (NumberFormatException e) {
-                	values.setHint("Invalid value!");
+              
                 }
             break;
             case R.id.equals:
