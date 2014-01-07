@@ -185,6 +185,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             break;
             case R.id.add:
                 op = "+";
+                try {
                 if(ans == 0){
                     ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
@@ -199,9 +200,13 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     ans = ans + num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
+                } catch (NumberFormatException e) {
+                	values.setText("Invalid value!");
+                }
             break;
             case R.id.subtract:
                 op = "-";
+                try {
                 if(ans == 0){
                     ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
@@ -216,9 +221,13 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     ans = ans - num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
+                } catch (NumberFormatException e) {
+                	values.setText("Invalid value!");
+                }
             break;
             case R.id.multiply:
                 op = "*";
+                try {
                 if(ans == 0){
                     ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
@@ -233,9 +242,13 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     ans = ans * num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
+                } catch (NumberFormatException e) {
+                	values.setText("Invalid value!");
+                }
             break;
             case R.id.divide:
                 op = "/";
+                try {
                 if(ans == 0){
                     ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
@@ -249,6 +262,9 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("");
                     ans = ans / num1;
                     values.setText("Result : " + Integer.toString(ans));
+                }
+                } catch (NumberFormatException e) {
+                	values.setText("Invalid value!");
                 }
             break;
             case R.id.equals:
