@@ -81,7 +81,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             ans = num0 * num1;
             values.setText("Result : " + Integer.toString(ans));
         }
-        else if (op.equals("+")){
+        else if (op.equals("/")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
             ans = num0 / num1;
