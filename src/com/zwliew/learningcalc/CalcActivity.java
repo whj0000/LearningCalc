@@ -12,7 +12,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, cancel, add, subtract, multiply;
 	EditText values;
 	String op;
-	int num0, num1, ans;
+	int num1, ans;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,25 +66,25 @@ public class CalcActivity extends Activity implements View.OnClickListener {
     	if(op.equals("+")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
-            ans = num0 + num1;
+            ans = ans + num1;
             values.setText("Result : " + Integer.toString(ans));
         }
         else if(op.equals("-")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
-            ans = num0 - num1;
+            ans = ans - num1;
             values.setText("Result : " + Integer.toString(ans));
         }
         else if(op.equals("*")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
-            ans = num0 * num1;
+            ans = ans * num1;
             values.setText("Result : " + Integer.toString(ans));
         }
         else if (op.equals("/")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
-            ans = num0 / num1;
+            ans = ans / num1;
             values.setText("Result : " + Integer.toString(ans));
         }
     	
@@ -177,7 +177,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
          
             break;
             case R.id.cancel:
-                num0 = 0;
+                ans = 0;
                 num1 = 0;
                 values.setText("");
                 values.setHint("Enter values");
@@ -185,8 +185,8 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             break;
             case R.id.add:
                 op = "+";
-                if(num0 == 0){
-                    num0 = Integer.parseInt(values.getText().toString());
+                if(ans == 0){
+                    ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -196,14 +196,14 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 else{
                     num1 = Integer.parseInt(values.getText().toString());
                     values.setText("");
-                    ans = num0 + num1;
+                    ans = ans + num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
             break;
             case R.id.subtract:
                 op = "-";
-                if(num0 == 0){
-                    num0 = Integer.parseInt(values.getText().toString());
+                if(ans == 0){
+                    ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -213,14 +213,14 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 else{
                     num1 = Integer.parseInt(values.getText().toString());
                     values.setText("");
-                    ans = num0 - num1;
+                    ans = ans - num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
             break;
             case R.id.multiply:
                 op = "*";
-                if(num0 == 0){
-                    num0 = Integer.parseInt(values.getText().toString());
+                if(ans == 0){
+                    ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -230,14 +230,14 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 else{
                     num1 = Integer.parseInt(values.getText().toString());
                     values.setText("");
-                    ans = num0 * num1;
+                    ans = ans * num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
             break;
             case R.id.divide:
                 op = "/";
-                if(num0 == 0){
-                    num0 = Integer.parseInt(values.getText().toString());
+                if(ans == 0){
+                    ans = Integer.parseInt(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -247,7 +247,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 else{
                     num1 = Integer.parseInt(values.getText().toString());
                     values.setText("");
-                    ans = num0 / num1;
+                    ans = ans / num1;
                     values.setText("Result : " + Integer.toString(ans));
                 }
             break;
@@ -256,22 +256,22 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     if(num1 != 0){
                         if(op.equals("+")){
                             values.setText("");
-                            /*ans = num0 + num1;*/
+                            /*ans = ans + num1;*/
                             values.setText("Result : " + Integer.toString(ans));
                         }
                         else if(op.equals("-")){
                             values.setText("");/*
-                            ans = num0 - num1;*/
+                            ans = ans - num1;*/
                             values.setText("Result : " + Integer.toString(ans));
                         }
                         else if(op.equals("*")){
                             values.setText("");/*
-                            ans = num0 * num1;*/
+                            ans = ans * num1;*/
                             values.setText("Result : " + Integer.toString(ans));
                         }
                         else if(op.equals("/")){
                             values.setText("");/*
-                            ans = num0 / num1;*/
+                            ans = ans / num1;*/
                             values.setText("Result : " + Integer.toString(ans));
                         }
                     }
