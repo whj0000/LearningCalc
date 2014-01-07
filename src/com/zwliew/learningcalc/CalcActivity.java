@@ -63,6 +63,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
     }
 
 	public void logic() {
+		try {
     	if(op.equals("+")){
             num1 = Integer.parseInt(values.getText().toString());
             values.setText("");
@@ -87,7 +88,9 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             ans = ans / num1;
             values.setText("Result : " + Integer.toString(ans));
         }
-    	
+		} catch (NumberFormatException e) {
+			values.setHint("Invalid value!");
+		}
     }
 
 	@Override
