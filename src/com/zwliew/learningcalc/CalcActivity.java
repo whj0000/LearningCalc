@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class CalcActivity extends Activity implements View.OnClickListener {
 
-	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, cancel, add, subtract, multiply;
+	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, delete, add, subtract, multiply;
 	EditText values;
 	String op;
 	int num1, ans;
@@ -31,7 +31,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
         nine = (Button) findViewById(R.id.nine);
         equals = (Button) findViewById(R.id.equals);
         divide = (Button) findViewById(R.id.divide);
-        cancel = (Button) findViewById(R.id.cancel);
+        delete = (Button) findViewById(R.id.delete);
         add = (Button) findViewById(R.id.add);
         subtract = (Button) findViewById(R.id.subtract);
         multiply = (Button) findViewById(R.id.multiply);
@@ -50,7 +50,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             nine.setOnClickListener(this);            
             equals.setOnClickListener(this);
             divide.setOnClickListener(this);             
-            cancel.setOnClickListener(this);             
+            delete.setOnClickListener(this);             
             add.setOnClickListener(this);  
             subtract.setOnClickListener(this);           
             multiply.setOnClickListener(this);      
@@ -179,7 +179,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
          
             break;
-            case R.id.cancel:
+            case R.id.delete:
                 ans = 0;
                 num1 = 0;
                 values.setText("");

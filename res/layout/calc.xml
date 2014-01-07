@@ -121,8 +121,8 @@
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:id = "@+id/cancel"
-        android:text="@string/cancel" />
+        android:id = "@+id/delete"
+        android:text="@string/delete" />
 
     <Button
         android:layout_width="55dp"
