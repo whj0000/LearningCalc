@@ -12,7 +12,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, delete, add, subtract, multiply, sqrt;
 	EditText values;
 	String op;
-	int num0, num1, ans;
+	int num1, ans;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -190,8 +190,6 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             break;
             case R.id.add:
                 op = "+";
-				num0 = ans
-				if(num0 != 
                 try {
                 if(ans == 0){
                     ans = Integer.parseInt(values.getText().toString());
@@ -209,7 +207,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 }
                 } catch (NumberFormatException e) {
               
-                }
+                } 
             break;
             case R.id.subtract:
                 op = "-";
