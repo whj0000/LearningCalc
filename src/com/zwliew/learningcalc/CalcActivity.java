@@ -304,39 +304,34 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 			case R.id.sqrt:
 				op = "sqrt";
 				try {
-					if(ans == 0) {
-						ans = Double.parseDouble(values.getText().toString());
-						values.setText("");
-					} else {
 					ans = Double.parseDouble(values.getText().toString());
 					values.setText("");
 					ans = Math.sqrt(ans);
 					values.setText("Result : " + Double.toString(ans));
 					
-					}
 				} catch (NumberFormatException e) {
 					
 				}
 				break;
 				
 			case R.id.remainder:
-				op = "remainder";
+				op = "%";
 				try {
-					if(ans == 0) {
+	                if(ans == 0) {
 	                    ans = Double.parseDouble(values.getText().toString());
 	                    values.setText("");
-					}
-					else if(num1 != 0) {
+	                }
+	                else if(num1 != 0) {
 	                    num1 = 0;
 	                    values.setText("");
-					}
-					else {
+	                }
+	                else {
 					num1 = Double.parseDouble(values.getText().toString());
 					values.setText("");
 					ans = ans % num1;
 					values.setText("Result : " + Double.toString(ans));
-					}
-					
+				
+	                }
 				} catch (NumberFormatException e) {
 					
 				}
@@ -364,6 +359,11 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                             values.setText("");
                             /*ans = ans / num1;*/
                             values.setText("Result : " + Double.toString(ans));
+                        }
+                        else if(op.equals("%")) {
+                        	values.setText("");
+                        	/*ans = ans % num1;*/
+                        	values.setText("Result : " + Double.toString(ans));
                         }
                     }
                     else {
