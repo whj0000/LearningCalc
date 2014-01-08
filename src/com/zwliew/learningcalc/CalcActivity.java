@@ -12,7 +12,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, delete, add, subtract, multiply, sqrt;
 	EditText values;
 	String op;
-	int num1, ans;
+	double num1, ans;
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,28 +67,28 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	public void logic() {
 		try {
     	if(op.equals("+")){
-            num1 = Integer.parseInt(values.getText().toString());
+            num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans + num1;
-            values.setText("Result : " + Integer.toString(ans));
+            values.setText("Result : " + Double.toString(ans));
         }
         else if(op.equals("-")){
-            num1 = Integer.parseInt(values.getText().toString());
+            num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans - num1;
-            values.setText("Result : " + Integer.toString(ans));
+            values.setText("Result : " + Double.toString(ans));
         }
         else if(op.equals("*")){
-            num1 = Integer.parseInt(values.getText().toString());
+            num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans * num1;
-            values.setText("Result : " + Integer.toString(ans));
+            values.setText("Result : " + Double.toString(ans));
         }
         else if (op.equals("/")){
-            num1 = Integer.parseInt(values.getText().toString());
+            num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans / num1;
-            values.setText("Result : " + Integer.toString(ans));
+            values.setText("Result : " + Double.toString(ans));
         }
 		} catch (NumberFormatException e) {
 			
@@ -192,7 +192,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 op = "+";
                 try {
                 if(ans == 0){
-                    ans = Integer.parseInt(values.getText().toString());
+                    ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -200,10 +200,10 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("");
                 }
                 else{
-                    num1 = Integer.parseInt(values.getText().toString());
+                    num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans + num1;
-                    values.setText("Result : " + Integer.toString(ans));
+                    values.setText("Result : " + Double.toString(ans));
                 }
                 } catch (NumberFormatException e) {
               
@@ -213,7 +213,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 op = "-";
                 try {
                 if(ans == 0){
-                    ans = Integer.parseInt(values.getText().toString());
+                    ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -221,10 +221,10 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("");
                 }
                 else{
-                    num1 = Integer.parseInt(values.getText().toString());
+                    num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans - num1;
-                    values.setText("Result : " + Integer.toString(ans));
+                    values.setText("Result : " + Double.toString(ans));
                 }
                 } catch (NumberFormatException e) {
               
@@ -234,7 +234,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 op = "*";
                 try {
                 if(ans == 0){
-                    ans = Integer.parseInt(values.getText().toString());
+                    ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -242,10 +242,10 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("");
                 }
                 else{
-                    num1 = Integer.parseInt(values.getText().toString());
+                    num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans * num1;
-                    values.setText("Result : " + Integer.toString(ans));
+                    values.setText("Result : " + Double.toString(ans));
                 }
                 } catch (NumberFormatException e) {
             
@@ -255,7 +255,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 op = "/";
                 try {
                 if(ans == 0){
-                    ans = Integer.parseInt(values.getText().toString());
+                    ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
                 else if(num1 != 0){
@@ -263,10 +263,10 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                     values.setText("");
                 }
                 else{
-                    num1 = Integer.parseInt(values.getText().toString());
+                    num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans / num1;
-                    values.setText("Result : " + Integer.toString(ans));
+                    values.setText("Result : " + Double.toString(ans));
                 }
                 } catch (NumberFormatException e) {
               
@@ -286,22 +286,22 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                         if(op.equals("+")){
                             values.setText("");
                             /*ans = ans + num1;*/
-                            values.setText("Result : " + Integer.toString(ans));
+                            values.setText("Result : " + Double.toString(ans));
                         }
                         else if(op.equals("-")){
                             values.setText("");/*
                             ans = ans - num1;*/
-                            values.setText("Result : " + Integer.toString(ans));
+                            values.setText("Result : " + Double.toString(ans));
                         }
                         else if(op.equals("*")){
                             values.setText("");/*
                             ans = ans * num1;*/
-                            values.setText("Result : " + Integer.toString(ans));
+                            values.setText("Result : " + Double.toString(ans));
                         }
                         else if(op.equals("/")){
                             values.setText("");/*
                             ans = ans / num1;*/
-                            values.setText("Result : " + Integer.toString(ans));
+                            values.setText("Result : " + Double.toString(ans));
                         }
                     }
                     else{
