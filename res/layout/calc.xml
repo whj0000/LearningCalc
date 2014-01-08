@@ -118,6 +118,7 @@
        android:layout_gravity="center"
        android:gravity="center"
        android:paddingTop="20dp" >
+    
     <Button
         android:layout_width="55dp"
         android:layout_height="wrap_content"
@@ -155,7 +156,25 @@
 			android:layout_width="55dp"
 			android:layout_height="wrap_content"
 			android:id = "@+id/sqrt"
-			android:text="@string/sqrt" />
+			android:text = "@string/sqrt" />
+		
+		<Button
+		    android:layout_width="55dp"
+			android:layout_height="wrap_content"
+			android:id = "@+id/placeholder0" 
+			android:text = "@string/placeholder" />
+		
+		<Button
+			android:layout_width="55dp"
+			android:layout_height="wrap_content" 
+			android:id = "@+id/placeholder1"
+			android:text = "@string/placeholder" />
+		
+		<Button
+		    android:layout_width="55dp"
+			android:layout_height="wrap_content" 
+			android:id = "@+id/placeholder2"
+			android:text = "@string/placeholder" />
    
 	</LinearLayout>
 </LinearLayout>

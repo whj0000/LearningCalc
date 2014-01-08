@@ -275,7 +275,10 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 			case R.id.sqrt:
 				op = "sqrt";
 				try {
-					
+					ans = Double.parseDouble(values.getText().toString());
+					values.setText("");
+					ans = Math.sqrt(ans);
+					values.setText("Result : " + Double.toString(ans));
 				} catch (NumberFormatException e) {
 					
 				}

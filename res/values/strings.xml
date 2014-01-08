@@ -21,6 +21,7 @@
 	<string name="add">+</string>
 	<string name="delete">Del</string>
 	<string name="hint">Enter values</string>
-	<string name="sqrt">SqRt</string>
+	<string name="sqrt">√</string>
+	<string name="placeholder">&#8230;</string>
 	
 </resources>
