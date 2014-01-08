@@ -272,6 +272,14 @@ public class CalcActivity extends Activity implements View.OnClickListener {
               
                 }
             break;
+			case R.id.sqrt:
+				op = "sqrt";
+				try {
+					
+				} catch (NumberFormatException e) {
+					
+				}
+				break;
             case R.id.equals:
                 if(op != null){
                     if(num1 != 0){
