@@ -66,25 +66,25 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 
 	public void logic() {
 		try {
-    	if(op.equals("+")){
+    	if(op.equals("+")) {
             num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans + num1;
             values.setText("Result : " + Double.toString(ans));
         }
-        else if(op.equals("-")){
+        else if(op.equals("-")) {
             num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans - num1;
             values.setText("Result : " + Double.toString(ans));
         }
-        else if(op.equals("*")){
+        else if(op.equals("*")) {
             num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans * num1;
             values.setText("Result : " + Double.toString(ans));
         }
-        else if (op.equals("/")){
+        else if (op.equals("/")) {
             num1 = Double.parseDouble(values.getText().toString());
             values.setText("");
             ans = ans / num1;
@@ -98,9 +98,9 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 	@Override
 	public void onClick(View v) {
 		Editable str =  values.getText();
-        switch(v.getId()){
+        switch(v.getId()) {
         	case R.id.zero:
-        		if(num1 != 0){
+        		if(num1 != 0) {
         			num1 = 0;
         			values.setText("");
         		}
@@ -108,7 +108,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
         		values.setText(str);
         	break;
             case R.id.one:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -116,7 +116,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.two:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -124,7 +124,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.three:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -132,7 +132,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.four:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -140,7 +140,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.five:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -148,7 +148,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.six:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -156,7 +156,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.seven:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -164,7 +164,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
                 values.setText(str);
             break;
             case R.id.eight:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -173,7 +173,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
          
             break;
             case R.id.nine:
-                if(num1 != 0){
+                if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -191,15 +191,15 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             case R.id.add:
                 op = "+";
                 try {
-                if(ans == 0){
+                if(ans == 0) {
                     ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
-                else if(num1 != 0){
+                else if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
-                else{
+                else {
                     num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans + num1;
@@ -212,11 +212,11 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             case R.id.subtract:
                 op = "-";
                 try {
-                if(ans == 0){
+                if(ans == 0) {
                     ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
-                else if(num1 != 0){
+                else if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -233,15 +233,15 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             case R.id.multiply:
                 op = "*";
                 try {
-                if(ans == 0){
+                if(ans == 0) {
                     ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
-                else if(num1 != 0){
+                else if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
-                else{
+                else {
                     num1 = Double.parseDouble(values.getText().toString());
                     values.setText("");
                     ans = ans * num1;
@@ -254,11 +254,11 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             case R.id.divide:
                 op = "/";
                 try {
-                if(ans == 0){
+                if(ans == 0) {
                     ans = Double.parseDouble(values.getText().toString());
                     values.setText("");
                 }
-                else if(num1 != 0){
+                else if(num1 != 0) {
                     num1 = 0;
                     values.setText("");
                 }
@@ -284,30 +284,30 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 				}
 				break;
             case R.id.equals:
-                if(op != null){
-                    if(num1 != 0){
-                        if(op.equals("+")){
+                if(op != null) {
+                    if(num1 != 0) {
+                        if(op.equals("+")) {
                             values.setText("");
                             /*ans = ans + num1;*/
                             values.setText("Result : " + Double.toString(ans));
                         }
-                        else if(op.equals("-")){
+                        else if(op.equals("-")) {
                             values.setText("");/*
                             ans = ans - num1;*/
                             values.setText("Result : " + Double.toString(ans));
                         }
-                        else if(op.equals("*")){
+                        else if(op.equals("*")) {
                             values.setText("");/*
                             ans = ans * num1;*/
                             values.setText("Result : " + Double.toString(ans));
                         }
-                        else if(op.equals("/")){
+                        else if(op.equals("/")) {
                             values.setText("");/*
                             ans = ans / num1;*/
                             values.setText("Result : " + Double.toString(ans));
                         }
                     }
-                    else{
+                    else {
                     	
                         logic();
                         
