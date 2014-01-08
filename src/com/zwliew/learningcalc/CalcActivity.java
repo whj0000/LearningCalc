@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class CalcActivity extends Activity implements View.OnClickListener {
 
-	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, delete, add, subtract, multiply, sqrt;
+	Button zero, one, two, three, four, five, six, seven, eight, nine, equals, divide, delete, add, subtract, multiply, sqrt, remainder;
 	EditText values;
 	String op;
 	double num1, ans;
@@ -36,7 +36,8 @@ public class CalcActivity extends Activity implements View.OnClickListener {
         subtract = (Button) findViewById(R.id.subtract);
         multiply = (Button) findViewById(R.id.multiply);
         values = (EditText) findViewById(R.id.values);
-		sqrt = (Button) findViewById(R.id.sqrt);;
+		sqrt = (Button) findViewById(R.id.sqrt);
+		remainder =(Button) findViewById(R.id.remainder);
         
         try{
         	zero.setOnClickListener(this);
@@ -56,6 +57,7 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             subtract.setOnClickListener(this);           
             multiply.setOnClickListener(this);   
 			sqrt.setOnClickListener(this);
+			remainder.setOnClickListener(this);
 
         }
         catch(Exception e){
@@ -89,6 +91,12 @@ public class CalcActivity extends Activity implements View.OnClickListener {
             values.setText("");
             ans = ans / num1;
             values.setText("Result : " + Double.toString(ans));
+        }
+        else if (op.equals("%")) {
+        	num1 = Double.parseDouble(values.getText().toString());
+        	values.setText("");
+        	ans = ans % num1;
+        	values.setText("Results : " + Double.toString(ans));
         }
     	
 		} catch (NumberFormatException e) {
@@ -296,10 +304,38 @@ public class CalcActivity extends Activity implements View.OnClickListener {
 			case R.id.sqrt:
 				op = "sqrt";
 				try {
+					if(ans == 0) {
+						ans = Double.parseDouble(values.getText().toString());
+						values.setText("");
+					} else {
 					ans = Double.parseDouble(values.getText().toString());
 					values.setText("");
 					ans = Math.sqrt(ans);
 					values.setText("Result : " + Double.toString(ans));
+					
+					}
+				} catch (NumberFormatException e) {
+					
+				}
+				break;
+				
+			case R.id.remainder:
+				op = "remainder";
+				try {
+					if(ans == 0) {
+	                    ans = Double.parseDouble(values.getText().toString());
+	                    values.setText("");
+					}
+					else if(num1 != 0) {
+	                    num1 = 0;
+	                    values.setText("");
+					}
+					else {
+					num1 = Double.parseDouble(values.getText().toString());
+					values.setText("");
+					ans = ans % num1;
+					values.setText("Result : " + Double.toString(ans));
+					}
 					
 				} catch (NumberFormatException e) {
 					

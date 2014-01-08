@@ -170,8 +170,8 @@
 		<Button
 		    android:layout_width="55dp"
 			android:layout_height="wrap_content"
-			android:id="@+id/placeholder0" 
-			android:text="@string/placeholder" />
+			android:id="@+id/remainder" 
+			android:text="@string/remainder" />
 		
 		<Button
 			android:layout_width="55dp"
